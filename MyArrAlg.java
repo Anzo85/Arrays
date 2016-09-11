@@ -10,16 +10,23 @@ public class MyArrAlg {
     public static void main(String[] args) {
 
 
+        System.out.println(elementSumm());
+
+
+    }
+
+    public static boolean elementSumm() {
+
         int[] array = {1, 6, 9, 11, 22, 25, 30};
 
         int sum = 47;
 
-        String s = "No";
+        Boolean result = false;
         int j = 0;
         int k = 0;
         for (int i = 0; i < array.length; ) {
             if (array[j] + array[array.length - (k + 1)] == sum) {
-                s = "Yess";
+                result = true;
                 break;
 
             } else if (array[j] + array[array.length - (k + 1)] > sum) {
@@ -32,6 +39,8 @@ public class MyArrAlg {
             }
 
         }
-        System.out.println(s);
+
+        return result;
     }
+
 }

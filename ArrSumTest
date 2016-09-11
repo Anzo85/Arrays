@@ -1,0 +1,41 @@
+package org.anzo.ArrAlgTest;
+
+import org.anzo.ArrAlg.MyArrAlg;
+import org.junit.Test;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+
+/**
+ * Created by andreyz on 11.09.16.
+ */
+public class MyArrAlgTest {
+
+
+    @Test
+
+    public void arrSumTest() {
+
+
+        int[] array = {1, 6, 9, 11, 22, 25, 30};
+
+        int sum = 47;
+
+        assertThat(MyArrAlg.elementSumm(array, sum), is(true));
+
+    }
+
+    @Test
+
+    public void arrSumTest2() {
+
+
+        int[] array = {1, 6, 9, 11, 22, 25, 30};
+
+        int sum = 48;
+
+        assertThat(MyArrAlg.elementSumm(array, sum), is(false));
+
+    }
+
+}

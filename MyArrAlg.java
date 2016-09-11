@@ -22,19 +22,19 @@ public class MyArrAlg {
 
 
         Boolean result = false;
-        int j = 0;
-        int k = 0;
+        int lowIndex = 0;
+        int hihgIndex = 0;
         for (int i = 0; i < array.length; ) {
-            if (array[j] + array[array.length - (k + 1)] == sum) {
+            if (array[lowIndex] + array[array.length - (hihgIndex + 1)] == sum) {
                 result = true;
                 break;
 
-            } else if (array[j] + array[array.length - (k + 1)] > sum) {
+            } else if (array[lowIndex] + array[array.length - (hihgIndex + 1)] > sum) {
                 i++;
-                k++;
-            } else if (array[j] + array[array.length - (k + 1)] < sum) {
+                hihgIndex++;
+            } else if (array[lowIndex] + array[array.length - (hihgIndex + 1)] < sum) {
                 i++;
-                j++;
+                lowIndex++;
 
             }
 

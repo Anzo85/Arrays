@@ -9,17 +9,17 @@ public class MyArrAlg {
 
     public static void main(String[] args) {
 
+        int[] array = {1, 6, 9, 11, 22, 25, 30};
 
-        System.out.println(elementSumm());
+        int sum = 47;
+
+        System.out.println(elementSumm(array, sum));
 
 
     }
 
-    public static boolean elementSumm() {
+    public static boolean elementSumm(int[] array, int sum) {
 
-        int[] array = {1, 6, 9, 11, 22, 25, 30};
-
-        int sum = 47;
 
         Boolean result = false;
         int j = 0;
